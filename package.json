@@ -23,9 +23,11 @@
   "homepage": "https://github.com/defilogist/tensor-trade-js#readme",
   "dependencies": {
     "@apollo/client": "^3.8.7",
+    "@solana/web3.js": "^1.87.6",
     "apollo-link": "^1.2.14",
     "apollo-server": "^3.12.1",
     "axios": "^1.6.1",
+    "bs58": "^5.0.0",
     "cross-fetch": "^4.0.0",
     "graphql-ws": "^5.14.2",
     "react": "^18.2.0",
