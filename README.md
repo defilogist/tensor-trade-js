@@ -17,7 +17,11 @@ npm i git+https://github.com/defilogist/tensor-trade-js
 ```javascript
 (async () => {
   const { TensorClient } = require('tensor-trade-js')
-  const client = new TensorClient(process.env.TENSOR_API_KEY)
+  const client = new TensorClient(
+      process.env.TENSOR_API_KEY,
+      process.env.SOLANA_WALLET_PRIVATE_KEY, // needed only for transactions
+      'mainnet-beta' // needed only for transactions
+  )
   const floor = await client.getCollectionFloor('drip_roundie_teens')
   const percentage = 0.99
   const nft = {
@@ -33,7 +37,7 @@ npm i git+https://github.com/defilogist/tensor-trade-js
 
 * getCollectionInfos(slug)
 * getCollectionFloor(slug)
-* listNft(mint, walletAddress, price) // Price in $SOL
-* runStopLossLoop(slug, nfts, limit, percentage = 1, frequence = 3000)
+* listcNft(mint, walletAddress, price) // Price in $SOL
+* runStopLossLoop(slug, cnfts, limit, percentage = 1, frequence = 3000)
   * percentage is a number between 0 and 1
   * frequence of floor checking is in milliseconds
