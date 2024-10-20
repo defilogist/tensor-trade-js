@@ -1,3 +1,5 @@
+# DEPRECATED: Tensor has new API. Update in progress
+
 # tensor-trade-js
 
 Simple javascript client for Node.js and the Tensor Trade API.
